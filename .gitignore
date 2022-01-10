@@ -37,3 +37,7 @@ override.tf.json
 terraform.rc
 
 ################### END OF TERRAFORM SPECIFIC ######################
+
+################### VARIOUS FILES AND FOLDERS ######################
+
+.config/.gcplz.config

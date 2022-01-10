@@ -1,0 +1,36 @@
+{
+    "files.exclude": {
+        "out": true
+    },
+
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true,
+        "**/.terraform": true,
+        "**/*.tfstate": true,
+        "**/*.tfplan": true,
+    },
+
+    "[terraform]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+
+        "files.encoding": "utf8",
+        "files.eol": "\n",
+        "files.insertFinalNewline": true,
+        "files.trimFinalNewlines": true,
+        "files.trimTrailingWhitespace": true,
+    },
+
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+
+    "[markdown]": {
+        "editor.wordWrapColumn": 80,
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.quickSuggestions": false,
+        "files.trimTrailingWhitespace": false
+    }
+}

@@ -1,0 +1,8 @@
+module:
+  name:
+  version:
+  description: |
+    # MULTI-LINE DESCRIPTION OF THE MODULE
+
+  dependencies:
+    # List of module dependencies
