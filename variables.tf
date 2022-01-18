@@ -8,12 +8,12 @@ variable "project_id" {
   }
 
   validation {
-    condition = can(regex("^[a-zA-Z]{1}[a-zA-Z0-9-]{4,29}[a-zA-Z0-9]{1}$", trimspace(var.project_id)))
+    condition     = can(regex("^[a-zA-Z]{1}[a-zA-Z0-9-]{4,29}[a-zA-Z0-9]{1}$", trimspace(var.project_id)))
     error_message = "The var.project_id must be valid Project ID, that follows constraints of Google Project IDs; alpha-numerical characters, incl. hyphens, with length from 6 to 30 characters in total, starting with letter and not ending with a hyphen."
   }
 
   validation {
-    condition = length(regexall("^.*(gcp|google|ssl).*$", lower(var.project_id))) == 0
+    condition     = length(regexall("^.*(gcp|google|ssl).*$", lower(var.project_id))) == 0
     error_message = "The var.project id contains on or more instances of restricted strings ('google','ssl', 'gcp'). Please verify the input."
   }
 }

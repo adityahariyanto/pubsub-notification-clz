@@ -1,6 +1,6 @@
-formatter: "" # this is required
+formatter: "markdown table"
 
-version: ""
+version: ">= 0.16.0, < 1.0.0"
 
 header-from: main.tf
 footer-from: ""
@@ -11,17 +11,44 @@ recursive:
 
 sections:
   hide: []
-  show: []
+  show:
+     - header
+     - providers
+     - inputs
+     - outputs
 
-content: ""
+content: |-
+  {{ .Header }}
+
+  ## Dependencies
+
+  {{ .Inputs }}
+
+  {{ .Outputs }}
+
+  ## Providers
+  {{ include "./.terraform.lock.hcl" }}
+
+  ## Contribution
+
+  ## Bug Reporting
+  {{ include "./.github/ISSUE_TEMPLATE/00-bug-issue.md"}}
+
+  ## Modules
+
+  {{ range .Module.ModuleCalls }}
+  - {{ .Name }} ({{ .Position.Filename }}#{{ .Position.Line }})
+  {{- end }}
+
+  ## Resources
+
+  {{ range .Module.Resources }}
+  - {{ .GetMode }}.{{ .Spec }} ({{ .Position.Filename }}#{{ .Position.Line }})
+  {{- end }}
 
 output:
   file: ""
   mode: inject
-  template: |-
-    <!-- BEGIN_TF_DOCS -->
-    {{ .Content }}
-    <!-- END_TF_DOCS -->
 
 output-values:
   enabled: false
@@ -37,7 +64,7 @@ settings:
   default: true
   description: false
   escape: true
-  hide-empty: false
+  hide-empty: true
   html: true
   indent: 2
   lockfile: true

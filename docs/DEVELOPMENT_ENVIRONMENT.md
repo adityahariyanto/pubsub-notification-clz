@@ -74,4 +74,19 @@ Install [uplift](https://github.com/gembaadvantage/uplift) according to the inst
 
 ### 4.2 Usage
 
-**uplift** may be used manually according to the instructions on the repository.
+**uplift** may be used manually according to the instructions on the uplift-repository.
+
+## 5 tflint
+This repository uses [tflint](https://github.com/terraform-linters/tflint) to automate Terraform code linting. Terraform code is supposed to be run against linters locally and on **CI/CD** pipelines to ensure the code follows up certain standards and conventions.
+
+### 5.1 Install tflint
+
+Install [tflint](https://github.com/terraform-linters/tflint) according to the instructions based on the OS.
+
+In order to run the linters successfully `tflint` needs to be initialised on every repository for the first time. This can be done via running:
+```
+tflint --init
+```
+
+### 5.2 Usage
+**tflint** may be used manually according to the instructions on the tflint-repository.

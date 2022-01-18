@@ -20,6 +20,13 @@ repos:
     hooks:
       - id: terraform_fmt
       - id: terraform_docs
+        always_run: true
+        stages: [post-rewrite]
+        args:
+          - --hook-config=--path-to-file=./README.md
+          - --hook-config=--add-to-existing-file=true
+          - --hook-config=--create-file-if-not-exist=true
+          - --args=--config=.config/.terraform-docs.yaml
       - id: terraform_tflint
         args:
           - --args=--config=__GIT_WORKING_DIR__/.tflint.hcl
