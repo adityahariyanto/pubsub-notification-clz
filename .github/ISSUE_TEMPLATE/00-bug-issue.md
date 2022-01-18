@@ -20,7 +20,7 @@ labels: 'type:bug'
 
 **Describe the expected behavior**
 
-**[Contributing](https://github.com/nordcloud/[REPOSITORY_NAME]/CONTRIBUTING.md)**
+**[Contributing](https://github.com/nordcloud/[REPOSITORY_NAME]/docs/CONTRIBUTING.md)**
 
 - Do you want to contribute a PR? (yes/no):
 - Briefly describe your candidate solution(if contributing):

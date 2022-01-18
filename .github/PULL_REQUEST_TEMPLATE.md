@@ -15,7 +15,7 @@ What types of changes does your code introduce to the module? Put an x in the bo
 
 ## Checklist
 
-- [ ] I have read the [CONTRIBUTING](./CONTRIBUTING.md) doc
+- [ ] I have read the [CONTRIBUTING](./docs/CONTRIBUTING.md) doc
 - [ ] My code follows the style guidelines of this project
 - [ ] Lint and unit tests pass locally with my changes
 - [ ] I have added tests that prove my fix is effective or that my feature works

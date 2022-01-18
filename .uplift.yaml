@@ -1,0 +1,18 @@
+# Change accordingly
+firstVersion: v1.0.0
+changelog:
+  exclude:
+    - chore(deps)
+    - docs
+    - ci
+bumps:
+  -
+    file: ./manifest.yaml
+    regex: "version: $VERSION"
+    semver: true
+    count: 1
+  -
+    file: ./README.md
+    regex: "version: $VERSION"
+    semver: true
+    count: 1

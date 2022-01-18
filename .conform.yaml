@@ -1,0 +1,34 @@
+policies:
+  - type: commit
+    spec:
+      header:
+        length: 89
+        imperative: true
+        case: lower
+        invalidLastCharacters: .
+      body:
+        required: true
+      dco: false
+      gpg:
+        required: false
+        identity:
+          gitHubOrganization: nordcloud
+      spellcheck:
+        locale: US
+      maximumOfOneCommit: false
+      conventional:
+        types:
+          - "build"
+          - "chore"
+          - "ci"
+          - "docs"
+          - "style"
+          - "refactor"
+          - "perf"
+          - "test"
+        scopes:
+          - "docs"
+          - "terraform"
+          - "tests"
+          - "metafiles"
+        descriptionLength: 72

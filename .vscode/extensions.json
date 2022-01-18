@@ -3,6 +3,7 @@
         "hashicorp.terraform",
         "hashicorp.terraform",
         "2gua.rainbow-brackets",
-        "xyc.vscode-mdx-preview"
+        "xyc.vscode-mdx-preview",
+        "vivaxy.vscode-conventional-commits"
     ]
 }

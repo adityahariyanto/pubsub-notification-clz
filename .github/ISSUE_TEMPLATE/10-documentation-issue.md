@@ -24,13 +24,13 @@ Are all the links to external resources correct?
 
 ### Input variables described with type information
 
-Are all input variables having correct structure: 
+Are all input variables having correct structure:
 1. description
 2. type
 3. default
 4. sensitive
 5. validation
- 
+
 All variables should have good description added for them.
 
 Are the input variables mapped correctly on the module's main [README.md](https://github.com/nordcloud/[REPOSITORY_NAME]/README.md)?
@@ -39,7 +39,7 @@ Are the input variables mapped correctly on the module's main [README.md](https:
 
 Are all module outputs having descriptions?
 
-Are all module outputs mapped correctly on the module's main [README.md](https://github.com/nordcloud/[REPOSITORY_NAME]/README.md)? 
+Are all module outputs mapped correctly on the module's main [README.md](https://github.com/nordcloud/[REPOSITORY_NAME]/README.md)?
 
 ### Usage example
 
@@ -51,5 +51,5 @@ Are there currently visuals? If not, will it clarify the content?
 
 ### Submit a pull request?
 
-Are you planning to also submit a pull request to fix the issue? 
-See contributor guide: [CONTRIBUTING](https://github.com/nordcloud/[REPOSITORY_NAME]/CONTRIBUTING.md)
+Are you planning to also submit a pull request to fix the issue?
+See contributor guide: [CONTRIBUTING](https://github.com/nordcloud/[REPOSITORY_NAME]/docs/CONTRIBUTING.md)

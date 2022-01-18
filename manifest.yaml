@@ -1,6 +1,6 @@
 module:
   name:
-  version:
+  version: $VERSION
   description: |
     # MULTI-LINE DESCRIPTION OF THE MODULE
 
