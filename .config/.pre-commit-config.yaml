@@ -30,3 +30,11 @@ repos:
       - id: terraform_tflint
         args:
           - --args=--config=.config/.tflint.hcl
+      - id: checkov
+        args: [
+          "-d", ".",
+          "--skip-path", "base*",
+          "--skip-path", "module*",
+          "--skip-path", "logical*",
+          "--skip-path", "template*"
+        ]

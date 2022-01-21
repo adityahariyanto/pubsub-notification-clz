@@ -90,3 +90,16 @@ tflint --init
 
 ### 5.2 Usage
 **tflint** may be used manually according to the instructions on the tflint-repository.
+
+
+## 6 checkov
+This repository uses [checkov](https://github.com/bridgecrewio/checkov) to detect security and compliance misconfigurations. Terraform code is supposed to be run against checkov locally and on **CI/CD** pipelines to ensure the code follows up certain standards and conventions.
+
+### 6.1 Install checkov
+
+Install [checkov](https://github.com/bridgecrewio/checkov) according to the instructions based on the OS.
+
+In order to run `checkov`, just execute `checkov -d <directory>`.
+
+### 6.2 Usage
+**checkov** may be used manually according to the instructions on the checkov-repository.
