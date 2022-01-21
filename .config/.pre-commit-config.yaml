@@ -29,4 +29,4 @@ repos:
           - --args=--config=.config/.terraform-docs.yaml
       - id: terraform_tflint
         args:
-          - --args=--config=__GIT_WORKING_DIR__/.tflint.hcl
+          - --args=--config=.config/.tflint.hcl
