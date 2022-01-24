@@ -9,15 +9,17 @@ See the document in [docs/DEVELOPMENT_ENVIRONMENT.md](./docs/DEVELOPMENT_ENVIRON
 ## General Ways of Working
 
 We follow the general best practices for distributed teams and version controlled systems and source-code, more specifically we:
+
 - use & enforce [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) in order to be explicity, descriptive and detailed on every unit of work we submit to source-code
 - use & enforce [semantic versioning](https://semver.org/spec/v2.0.0.html) (_unless not applicable_) in order to clearly mark, what our changes mean for the existing the systems using our code
 - use & enforce [a changelog](https://keepachangelog.com/en/1.0.0/) in order to keep human readable log of changes, in order to maintain transparency on what we have changed and when
 
 On top of the above conventions and toolign that enables us to enforce these conventions, we agree to use following conventions on our work:
+
 - we apply changes to the code only on branches, that are created from the latest **main-branc** upstream
 - we follow clear naming convention for the branches we create:
-    - new features to existing code is commited under branch that follows convention of `feature/{issue-number}-{short-descriptive-name}`
-    - bugfixes or patches to code, that are tied to reported issue is committed under branch that follows convention of `[bugfix|hotix|security]/{issue-number}-{short-descriptive-name}`
+  - new features to existing code is commited under branch that follows convention of `feature/{issue-number}-{short-descriptive-name}`
+  - bugfixes or patches to code, that are tied to reported issue is committed under branch that follows convention of `[bugfix|hotix|security]/{issue-number}-{short-descriptive-name}`
 - all of our changes go through pull-request flow and we fill up the **Pull Request** template accordingly
 - we prefer clean commit-history and attempt to merge only single commit to the main-branch
 - only approved pull requests will be merged on the main-branches

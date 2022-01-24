@@ -7,6 +7,7 @@ Repeat the steps in this section in order to setup the development environment a
 Following technologies and tooling should be installed with the minimum supported versions (_when applicable_) on the system, as **pre-requisite** for some of the technologies mentioned later on this document.
 
 ### 1.1 Hard Requirements
+
 - [go](https://go.dev/doc/install) >= `v1.17.3`
 - [Python](https://www.python.org/downloads/) >= `v3.8.5`
 - Bash >= `v5.1.8` or zsh >= `v5.8`
@@ -15,6 +16,7 @@ Following technologies and tooling should be installed with the minimum supporte
 - [git](https://git-scm.com/downloads) >= `v2.34.1`
 
 ### 1.2 Optional Requirements
+
 - [azure-cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) >= `v2.32.0`
 - [az devops](https://docs.microsoft.com/en-us/cli/azure/devops?view=azure-cli-latest) (_azure-cli extension_)
 - [VS Code](https://code.visualstudio.com/download) >= `v1.63.2`(_recommended code-editor_)
@@ -77,6 +79,7 @@ Install [uplift](https://github.com/gembaadvantage/uplift) according to the inst
 **uplift** may be used manually according to the instructions on the uplift-repository.
 
 ## 5 tflint
+
 This repository uses [tflint](https://github.com/terraform-linters/tflint) to automate Terraform code linting. Terraform code is supposed to be run against linters locally and on **CI/CD** pipelines to ensure the code follows up certain standards and conventions.
 
 ### 5.1 Install tflint
@@ -84,22 +87,25 @@ This repository uses [tflint](https://github.com/terraform-linters/tflint) to au
 Install [tflint](https://github.com/terraform-linters/tflint) according to the instructions based on the OS.
 
 In order to run the linters successfully `tflint` needs to be initialised on every repository for the first time. This can be done via running:
+
 ```
 tflint --init
 ```
 
 ### 5.2 Usage
+
 **tflint** may be used manually according to the instructions on the tflint-repository.
 
-
 ## 6 checkov
+
 This repository uses [checkov](https://github.com/bridgecrewio/checkov) to detect security and compliance misconfigurations. Terraform code is supposed to be run against checkov locally and on **CI/CD** pipelines to ensure the code follows up certain standards and conventions.
 
 ### 6.1 Install checkov
 
 Install [checkov](https://github.com/bridgecrewio/checkov) according to the instructions based on the OS.
 
-In order to run `checkov`, just execute `checkov -d <directory>`.
-
 ### 6.2 Usage
+
 **checkov** may be used manually according to the instructions on the checkov-repository.
+
+In order to run `checkov`, just execute `checkov -d <directory>`.
